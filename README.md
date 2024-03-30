@@ -1,6 +1,6 @@
 # Pistol
 
-- Gives players a gun
+Gives players a gun
 
 ### Supported games
 
