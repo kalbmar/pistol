@@ -1,8 +1,12 @@
-public Action Timer_GivePlayerPistol(Handle timer, int userId) {
+void Frame_Create(int userId) {
+    RequestFrame(Frame_OnGivePistol, userId);
+}
+
+static void Frame_OnGivePistol(int userId) {
     int client = GetClientOfUserId(userId);
 
     if (!Client_IsValid(client)) {
-        return Plugin_Stop;
+        return;
     }
  
     int team = GetClientTeam(client);
@@ -18,6 +22,4 @@ public Action Timer_GivePlayerPistol(Handle timer, int userId) {
             UseCase_SetBulletsForPistol(client, AXIS_BULLETS_FOR_PISTOL, AXIS_PISTOL_IN_ARRAY);
         }
     }
-    
-    return Plugin_Continue;
 }

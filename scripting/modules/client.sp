@@ -1,5 +1,5 @@
 bool Client_IsValid(int client) {
-    return (1 <= client <= MaxClients && IsClientInGame(client)) ? true : false;
+    return 1 <= client <= MaxClients && IsClientInGame(client);
 }
 
 int Client_GetClass(int client) {

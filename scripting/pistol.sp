@@ -1,10 +1,12 @@
 #include <sourcemod>
 #include <sdktools>
 
-#include "pistol/timer"
+#include "pistol/forward"
+#include "pistol/frame"
 
+#include "modules/forward.sp"
 #include "modules/event.sp"
-#include "modules/timer.sp"
+#include "modules/frame.sp"
 #include "modules/use-case.sp"
 #include "modules/client.sp"
 
@@ -12,10 +14,11 @@ public Plugin myinfo = {
     name = "Pistol",
     author = "Kalbmar",
     description = "Gives players a gun",
-    version = "1.0.1",
+    version = "1.0.2",
     url = "https://github.com/kalbmar/pistol",
 };
 
 public void OnPluginStart() {
+    Forward_Create();
     Event_Create();
 }

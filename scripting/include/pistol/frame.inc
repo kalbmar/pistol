@@ -1,7 +1,7 @@
-#if defined _pistol_timer_included
+#if defined _pistol_frame_included
  #endinput
 #endif
-#define _pistol_timer_included
+#define _pistol_frame_included
 
 #define TEAM_ALLIES 2
 #define TEAM_AXIS 3
