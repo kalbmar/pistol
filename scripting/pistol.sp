@@ -14,7 +14,7 @@ public Plugin myinfo = {
     name = "Pistol",
     author = "Kalbmar",
     description = "Gives players a gun",
-    version = "1.0.2",
+    version = "1.0.3",
     url = "https://github.com/kalbmar/pistol",
 };
 
